@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cobalt-cache"
+version = "0.1.0"
+description = "A zero-dependency Python toolkit of high-quality cache eviction policies (FIFO, LRU, LFU, LRU-K, SLRU, ARC, TinyLFU, W-TinyLFU)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "WsNodeX" }]
+keywords = ["cache", "caching", "lru", "lfu", "arc", "w-tinylfu", "eviction", "ttl"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://github.com/WsNodeX/cobalt"
+Repository = "https://github.com/WsNodeX/cobalt"
+
+[tool.setuptools]
+packages = ["cobalt", "cobalt.policies"]
+
+[tool.setuptools.package-data]
+cobalt = ["py.typed"]
